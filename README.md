@@ -1,37 +1,42 @@
-# SheetAudit-AI: Autonomous Project Summary Agent for Google Sheets
-SheetAudit-AI is an intelligent auditing system powered by GPT-4o and LangChain, designed to analyze multiple project checklists stored in Google Sheets and generate daily progress summaries automatically.
+# SheetAudit-AI
+Autonomous Project Summary Agent for Google Sheets
+SheetAudit-AI is an intelligent, LLM-powered auditing system that automates daily project updates by analyzing checklist data stored in Google Sheets. Designed for renovation workflows, it leverages GPT-4o and LangChain to generate human-like progress summaries and deliver them via email.
 
-# What it does:
-Connects to multiple Google Sheets, each representing a renovation project
+# What It Does
+Connects to multiple Google Sheets — each one represents a renovation project
 
-Reads raw checklist data from each project and calculates actual task completion percentages
+Extracts raw checklist data and calculates task completion percentages
 
-Compares today’s progress with yesterday’s snapshot using stored JSON data
+Compares today's progress with yesterday's using locally stored JSON snapshots
 
-Flags stale or skipped sheets, detects new projects, and highlights progress changes
+Flags issues like skipped sheets, paused projects, and missing updates
 
-Generates human-like email summaries via GPT-4o using LangChain prompt chaining
+Detects new projects and categorizes their current state (not started, in-progress, almost done)
 
-Automatically emails the summaries to stakeholders when it is scheduled 
+Generates a clean daily summary written in human style using GPT-4o via LangChain
 
-Fully supports daily scheduling and project-level compliance tracking
+Automatically sends the summary via email to stakeholders on a scheduled basis
 
-# Tech Stack:
-LangChain + GPT-4o (OpenAI) for intelligent summarization
+Supports daily tracking, accountability, and quick status visibility
 
-Google cloud services for Google Drive and Google Sheets API for spreadsheet access and data extraction
+# Tech Stack
+LangChain + GPT-4o (OpenAI) for natural language generation
 
-Python + JSON storage for snapshot-based comparison
+Google Cloud APIs (Sheets + Drive) for accessing live project data
 
-Secure email dispatching using SMTP
+Python for automation logic and processing
 
-Modular design for easy extension and training
+JSON snapshots for daily state comparison
 
-# Fails/Drawbacks:
-Tried using hugging face to run this automation locally and it is not supporting my system specifications.
+SMTP for secure email dispatch
 
-Hugging face also lets us to finetuning, which I already induced to my file training_script.py
+Modular, lightweight design — easy to extend, retrain, or plug into other workflows
 
-Failed to go through finetuning as GPT models doesnot support it.
+# Limitations / Known Issues
+Initially attempted using Hugging Face + Mistral 7B to run the summarization locally
 
-Failed to fully automate the scheduler as it requires some cloud software to do it
+Failed due to hardware limitations (model size too large for local setup)
+
+Finetuning setup attempted via train_script.py, but GPT-style models do not support direct finetuning
+
+Task scheduling is not yet fully automated — setting it up on cloud (e.g., via Cloud Functions or cron on VPS) is needed for production use
