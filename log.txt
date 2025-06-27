@@ -1,0 +1,27 @@
+[2025-06-25 12:28:46] Email sent successfully.
+[2025-06-25 12:35:49] Email sent successfully.
+[2025-06-25 12:46:46] Email sent successfully.
+[2025-06-25 12:51:50] Email sent successfully.
+[2025-06-25 12:53:01] Email sent successfully.
+[2025-06-25 13:01:27] Email sent successfully.
+[2025-06-25 13:19:18] Email sent successfully.
+[2025-06-25 13:24:14] Email failed: the header row in the worksheet contains duplicates: ['']To manually set the header row, use the `expected_headers` parameter of `get_all_records()`
+[2025-06-25 13:46:42] Email sent successfully.
+[2025-06-25 14:09:42] EMAIL SENT SUCCESSFULLY.
+[2025-06-25 14:28:42] EMAIL SENT SUCCESSFULLY.
+[2025-06-25 16:40:36] EMAIL SENT SUCCESSFULLY.
+[2025-06-26 08:39:47] EMAIL SENT SUCCESSFULLY.
+[2025-06-26 10:07:59] EMAIL SENT SUCCESSFULLY.
+[2025-06-26 10:22:45] EMAIL SENT SUCCESSFULLY.
+[2025-06-26 10:26:10] EMAIL SENT SUCCESSFULLY.
+[2025-06-26 10:38:49] EMAIL SENT SUCCESSFULLY.
+[2025-06-26 10:43:28] EMAIL SENT SUCCESSFULLY.
+[2025-06-26 14:03:13] EMAIL FAILED: Error code: 429 - {'error': {'message': 'Request too large for gpt-4o in organization org-kYyaQeqipO1pmeZr1LCVPuzb on tokens per min (TPM): Limit 30000, Requested 43548. The input or output tokens must be reduced in order to run successfully. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+[2025-06-26 14:08:24] EMAIL FAILED: Completions.create() got an unexpected keyword argument 'backoff_factor'
+[2025-06-26 14:09:04] EMAIL FAILED: Completions.create() got an unexpected keyword argument 'backoff_factor'
+[2025-06-26 14:09:47] EMAIL FAILED: Error code: 429 - {'error': {'message': 'Request too large for gpt-4o in organization org-kYyaQeqipO1pmeZr1LCVPuzb on tokens per min (TPM): Limit 30000, Requested 43548. The input or output tokens must be reduced in order to run successfully. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+[2025-06-26 14:10:59] EMAIL FAILED: Error code: 429 - {'error': {'message': 'Request too large for gpt-4o in organization org-kYyaQeqipO1pmeZr1LCVPuzb on tokens per min (TPM): Limit 30000, Requested 43548. The input or output tokens must be reduced in order to run successfully. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+[2025-06-26 14:11:49] EMAIL SENT SUCCESSFULLY.
+[2025-06-26 17:07:51] EMAIL SENT SUCCESSFULLY.
+[2025-06-27 09:28:27] EMAIL SENT SUCCESSFULLY.
+[2025-06-27 10:35:13] EMAIL SENT SUCCESSFULLY.
