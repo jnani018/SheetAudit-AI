@@ -33,10 +33,8 @@ SMTP for secure email dispatch
 Modular, lightweight design — easy to extend, retrain, or plug into other workflows
 
 # Limitations / Known Issues
-Initially attempted using Hugging Face + Mistral 7B to run the summarization locally
+Initially attempted using Hugging Face + Mistral 7B to run the summarization locally,Failed due to hardware limitations (model size too large for local setup)
 
-Failed due to hardware limitations (model size too large for local setup)
+Finetuning setup attempted via train_script.py which works for mistral model but GPT-style models do not support direct finetuning
 
-Finetuning setup attempted via train_script.py, but GPT-style models do not support direct finetuning
-
-Task scheduling is not yet fully automated — setting it up on cloud (e.g., via Cloud Functions or cron on VPS) is needed for production use
+Task scheduling is not yet fully automated — setting it up on cloud (e.g., via Cloud Functions or cron on VPS) is needed for production use. For now Using Task scheduler on windows which schedules the task locally.
